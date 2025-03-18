@@ -36,7 +36,7 @@ cd unsplash-mcp-server
 uv venv
 
 # Install dependencies
-uv pip install -r requirements.txt
+uv pip install .
 ```
 
 ## 💻 Usage
@@ -58,6 +58,11 @@ fastmcp dev server.py
 ### Cursor Editor Integration
 
 Add the following configuration to your Cursor editor's `settings.json`:
+
+⚠️ **Note:** Please adjust the following configuration according to your actual installation:
+
+- If `uv` is not in your system PATH, use an absolute path (e.g., `/path/to/uv`)
+- `./server.py` should be modified to the actual location of your server script (can use absolute path or path relative to workspace)
 
 <img src="screenshots/Snipaste_2.png" alt="Cursor Configuration Screenshot" />
 
