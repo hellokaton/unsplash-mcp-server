@@ -8,7 +8,7 @@
 
 ## 📋 Overview
 
-Unsplash MCP Server provides a simple yet powerful interface to search and utilize Unsplash's vast collection of high-quality images through MicroCommand Protocol (MCP). Perfect for developers looking to integrate Unsplash functionality into their applications or Cursor editor workflows.
+Unsplash MCP Server provides a simple yet powerful interface to search and utilize Unsplash's vast collection of high-quality images through MCP. Perfect for developers looking to integrate Unsplash functionality into their applications or Cursor editor workflows.
 
 ## ✨ Features
 
