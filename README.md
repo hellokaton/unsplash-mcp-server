@@ -1,45 +1,65 @@
 # Unsplash MCP Server
 
-A MCP server for Unsplash image search and utilities.
+> A powerful MicroCommand Protocol server for seamless Unsplash image integration and search capabilities.
 
-## Features
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- **Image Search**: Search Unsplash photos with various filters
+## 📋 Overview
 
-## Prerequisites
+Unsplash MCP Server provides a simple yet powerful interface to search and utilize Unsplash's vast collection of high-quality images through MicroCommand Protocol (MCP). Perfect for developers looking to integrate Unsplash functionality into their applications or Cursor editor workflows.
 
-- Python 3.9+
+## ✨ Features
+
+- **Advanced Image Search**: Search Unsplash's extensive photo library with filters for:
+  - Keyword relevance
+  - Color schemes
+  - Orientation options
+  - Custom sorting and pagination
+
+## 🔧 Prerequisites
+
+- Python 3.9 or higher
 - UV package manager (`pip install uv`)
-- Unsplash Access Key (register at [Unsplash Developers](https://unsplash.com/developers))
+- Unsplash API Access Key (register at [Unsplash Developers Portal](https://unsplash.com/developers))
 
-## Installation
+## 🚀 Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/hellokaton/unsplash-mcp-server.git
+
+# Navigate to project directory
 cd unsplash-mcp-server
-uv venv  # Create virtual environment
-uv pip install -r requirements.txt  # Install dependencies
+
+# Create virtual environment
+uv venv
+
+# Install dependencies
+uv pip install -r requirements.txt
 ```
 
-## Usage
+## 💻 Usage
 
 ### Local Development
 
-Create a `.env` file:
+1. Create a `.env` file in the root directory:
 
 ```env
 UNSPLASH_ACCESS_KEY=your_access_key_here
 ```
 
-For local testing and development:
+2. Run the server in development mode:
 
 ```bash
 fastmcp dev server.py
 ```
 
-### Cursor Integration
+### Cursor Editor Integration
 
-To use with Cursor editor, add this configuration to your settings.json:
+Add the following configuration to your Cursor editor's `settings.json`:
+
+<img src="screenshots/Snipaste_2.png" alt="Cursor Configuration Screenshot" />
 
 ```json
 {
@@ -55,11 +75,11 @@ To use with Cursor editor, add this configuration to your settings.json:
 }
 ```
 
-### Cursor Usage
+### Using in Cursor
 
-> I am preparing a screenshot for using the cursor, but it has crashed and I need to add it later.
+<img src="screenshots/Snipaste_1.png" alt="Unsplash MCP in Cursor" />
 
-## Available Tools
+## 🛠️ Available Tools
 
 ### Search Photos
 
@@ -72,10 +92,11 @@ To use with Cursor editor, add this configuration to your settings.json:
 }
 ```
 
-## License
+## 📄 License
 
-[MIT](LICENSE) License
+[MIT License](LICENSE)
 
-## Contact
+## 📬 Contact
 
-- [X/Twitter](https://x.com/hellokaton)
+- [Twitter/X](https://x.com/hellokaton)
+- [GitHub Issues](https://github.com/hellokaton/unsplash-mcp-server/issues)
