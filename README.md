@@ -65,7 +65,7 @@ Add the following configuration to your Cursor editor's `settings.json`:
 - If `uv` is not in your system PATH, use an absolute path (e.g., `/path/to/uv`)
 - `./server.py` should be modified to the actual location of your server script (can use absolute path or path relative to workspace)
 
-<img src="screenshots/Snipaste_2.png" alt="Cursor Configuration Screenshot" />
+<img src="screenshots/Snipaste_1.png" alt="Cursor Configuration Screenshot" />
 
 ```json
 {
@@ -83,7 +83,7 @@ Add the following configuration to your Cursor editor's `settings.json`:
 
 ### Using in Cursor
 
-<img src="screenshots/Snipaste_1.png" alt="Unsplash MCP in Cursor" />
+<img src="screenshots/Snipaste_2.png" alt="Unsplash MCP in Cursor" />
 
 ## 🛠️ Available Tools
 
