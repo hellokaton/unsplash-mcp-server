@@ -34,18 +34,23 @@ async def search_photos(
         orientation: Optional[str] = None
 ) -> List[UnsplashPhoto]:
     """
-    搜索 Unsplash 图片
+    Search for Unsplash photos
     
     Args:
-        query: 搜索关键词
-        page: 页码 (1-based)
-        per_page: 每页结果数量 (1-30)
-        order_by: 排序方式 (relevant 或 latest)
-        color: 颜色过滤 (black_and_white, black, white, yellow, orange, red, purple, magenta, green, teal, blue)
-        orientation: 方向过滤 (landscape, portrait, squarish)
+        query: Search keyword
+        page: Page number (1-based)
+        per_page: Results per page (1-30)
+        order_by: Sort method (relevant or latest)
+        color: Color filter (black_and_white, black, white, yellow, orange, red, purple, magenta, green, teal, blue)
+        orientation: Orientation filter (landscape, portrait, squarish)
     
     Returns:
-        List[UnsplashPhoto]: 搜索结果列表
+        List[UnsplashPhoto]: List of search results containing photo objects with the following properties:
+            - id: Unique identifier for the photo
+            - description: Optional text description of the photo
+            - urls: Dictionary of available image URLs in different sizes
+            - width: Original image width in pixels
+            - height: Original image height in pixels
     """
     access_key = os.getenv("UNSPLASH_ACCESS_KEY")
     if not access_key:
@@ -89,8 +94,8 @@ async def search_photos(
                 for photo in data["results"]
             ]
     except httpx.HTTPStatusError as e:
-        print(f"HTTP错误: {e.response.status_code} - {e.response.text}")
+        print(f"HTTP error: {e.response.status_code} - {e.response.text}")
         raise
     except Exception as e:
-        print(f"请求错误: {str(e)}")
+        print(f"Request error: {str(e)}")
         raise
