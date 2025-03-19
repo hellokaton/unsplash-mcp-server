@@ -1,5 +1,7 @@
 # Unsplash MCP Server
 
+[English](README.md) | [中文](README_zh.md)
+
 > A simple MCP server for seamless Unsplash image integration and search capabilities.
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -106,6 +108,30 @@ Add the following configuration to your Cursor editor's `settings.json`:
   "per_page": 5,
   "orientation": "landscape"
 }
+```
+
+## 🔄 Alternative Implementations
+
+### Golang Version
+
+If you prefer using Golang, there is also a Golang implementation of the Unsplash MCP Server available:
+
+- Repository: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
+- Features the same functionality as the Python version
+- Follows Golang best practices and standards
+
+#### Installation (Golang Version)
+
+```bash
+# Clone the repository
+git clone https://github.com/douglarek/unsplash-mcp-server.git
+
+# Navigate to project directory
+cd unsplash-mcp-server
+
+# Install dependencies and build
+go mod tidy
+go build
 ```
 
 ## 📄 License
