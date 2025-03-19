@@ -1,0 +1,22 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - UNSPLASH_ACCESS_KEY
+    properties:
+      UNSPLASH_ACCESS_KEY:
+        type: string
+        description: "The API key from https://unsplash.com/documentation"
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ 
+      "command": "python", 
+      "args": ["server.py"], 
+      "env": { 
+        UNSPLASH_ACCESS_KEY: config.UNSPLASH_ACCESS_KEY 
+      } 
+    })
