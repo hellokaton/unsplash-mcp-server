@@ -26,6 +26,16 @@ Unsplash MCP Server provides a simple yet powerful interface to search and utili
 
 ## 🚀 Installation
 
+### Installing via Smithery
+
+To install Unsplash Image Integration Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server):
+
+```bash
+npx -y @smithery/cli install @hellokaton/unsplash-mcp-server --client claude
+```
+
+### Manual Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/hellokaton/unsplash-mcp-server.git
