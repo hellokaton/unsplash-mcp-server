@@ -1,6 +1,6 @@
 # Unsplash MCP Server
 
-[English](README.md) | [中文](README_zh.md)
+English | [简体中文](README_zh.md)
 
 > A simple MCP server for seamless Unsplash image integration and search capabilities.
 
@@ -20,20 +20,28 @@ Unsplash MCP Server provides a simple yet powerful interface to search and utili
   - Orientation options
   - Custom sorting and pagination
 
-## 🔧 Prerequisites
-
-- Python 3.9 or higher
-- UV package manager (`pip install uv`)
-- Unsplash API Access Key (register at [Unsplash Developers Portal](https://unsplash.com/developers))
-
 ## 🚀 Installation
-
-### Installing via Smithery
 
 To install Unsplash Image Integration Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server):
 
+### IDE Setup
+
+**Cursor IDE**
+
 ```bash
-npx -y @smithery/cli install @hellokaton/unsplash-mcp-server --client claude
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cursor --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+```
+
+**Windsurf**
+
+```bash
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client windsurf --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+```
+
+**Cline**
+
+```bash
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cline --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
 ```
 
 ### Manual Installation
@@ -52,23 +60,7 @@ uv venv
 uv pip install .
 ```
 
-## 💻 Usage
-
-### Local Development
-
-1. Create a `.env` file in the root directory:
-
-```env
-UNSPLASH_ACCESS_KEY=your_access_key_here
-```
-
-2. Run the server in development mode:
-
-```bash
-fastmcp dev server.py
-```
-
-### Cursor Editor Integration
+**Cursor Editor Integration**
 
 Add the following configuration to your Cursor editor's `settings.json`:
 
@@ -110,29 +102,9 @@ Add the following configuration to your Cursor editor's `settings.json`:
 }
 ```
 
-## 🔄 Alternative Implementations
+## 🔄 Other Implementations
 
-### Golang Version
-
-If you prefer using Golang, there is also a Golang implementation of the Unsplash MCP Server available:
-
-- Repository: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
-- Features the same functionality as the Python version
-- Follows Golang best practices and standards
-
-#### Installation (Golang Version)
-
-```bash
-# Clone the repository
-git clone https://github.com/douglarek/unsplash-mcp-server.git
-
-# Navigate to project directory
-cd unsplash-mcp-server
-
-# Install dependencies and build
-go mod tidy
-go build
-```
+- Golang: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
 
 ## 📄 License
 

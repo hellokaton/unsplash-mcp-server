@@ -1,6 +1,6 @@
 # Unsplash MCP 服务器
 
-[English](README.md) | [中文](README_zh.md)
+[English](README.md) | 简体中文
 
 > 一个简单的 MCP 服务器，用于无缝集成 Unsplash 图片搜索功能。
 
@@ -20,20 +20,28 @@ Unsplash MCP 服务器通过 MCP 提供了一个简单而强大的接口，用�
   - 方向选项
   - 自定义排序和分页
 
-## 🔧 前提条件
-
-- Python 3.9 或更高版本
-- UV 包管理器 (`pip install uv`)
-- Unsplash API 访问密钥 (在 [Unsplash 开发者门户](https://unsplash.com/developers) 注册)
-
 ## 🚀 安装
 
-### 通过 Smithery 安装
+通过 [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server) 自动为不同 IDE 安装 Unsplash 图片集成服务器：
 
-通过 [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server) 自动为 Claude Desktop 安装 Unsplash 图片集成服务器：
+### IDE 设置
+
+**Cursor IDE**
 
 ```bash
-npx -y @smithery/cli install @hellokaton/unsplash-mcp-server --client claude
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cursor --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+```
+
+**Windsurf**
+
+```bash
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client windsurf --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+```
+
+**Cline**
+
+```bash
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cline --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
 ```
 
 ### 手动安装
@@ -52,23 +60,7 @@ uv venv
 uv pip install .
 ```
 
-## 💻 使用方法
-
-### 本地开发
-
-1. 在根目录创建一个 `.env` 文件：
-
-```env
-UNSPLASH_ACCESS_KEY=你的访问密钥
-```
-
-2. 在开发模式下运行服务器：
-
-```bash
-fastmcp dev server.py
-```
-
-### Cursor 编辑器集成
+**Cursor 编辑器集成**
 
 将以下配置添加到你的 Cursor 编辑器的 `settings.json` 中：
 
@@ -110,29 +102,9 @@ fastmcp dev server.py
 }
 ```
 
-## 🔄 替代实现
+## 🔄 其他实现
 
-### Golang 版本
-
-如果你偏好使用 Golang，也有一个 Unsplash MCP 服务器的 Golang 实现版本：
-
-- 代码库：[github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
-- 具有与 Python 版本相同的功能
-- 遵循 Golang 最佳实践和标准
-
-#### 安装（Golang 版本）
-
-```bash
-# 克隆代码库
-git clone https://github.com/douglarek/unsplash-mcp-server.git
-
-# 进入项目目录
-cd unsplash-mcp-server
-
-# 安装依赖并构建
-go mod tidy
-go build
-```
+- Golang 版本: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
 
 ## 📄 许可证
 
