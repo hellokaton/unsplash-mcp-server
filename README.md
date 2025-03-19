@@ -20,6 +20,17 @@ Unsplash MCP Server provides a simple yet powerful interface to search and utili
   - Orientation options
   - Custom sorting and pagination
 
+## 🔑 Obtaining Unsplash Access Key
+
+Before installing this server, you'll need to obtain an Unsplash API Access Key:
+
+1. Create a developer account at [Unsplash](https://unsplash.com/developers)
+2. Register a new application
+3. Get your Access Key from the application details page
+4. Use this key in the configuration steps below
+
+For more details, refer to the [official Unsplash API documentation](https://unsplash.com/documentation).
+
 ## 🚀 Installation
 
 To install Unsplash Image Integration Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server):

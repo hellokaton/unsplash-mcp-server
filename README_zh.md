@@ -20,6 +20,17 @@ Unsplash MCP 服务器通过 MCP 提供了一个简单而强大的接口，用�
   - 方向选项
   - 自定义排序和分页
 
+## 🔑 获取 Unsplash Access Key
+
+在安装服务器之前，您需要获取 Unsplash API Access Key：
+
+1. 在 [Unsplash](https://unsplash.com/developers) 创建开发者账户
+2. 注册一个新应用
+3. 从应用详情页获取您的 Access Key
+4. 在下面的配置步骤中使用此密钥
+
+更多详情，请参考 [Unsplash 官方 API 文档](https://unsplash.com/documentation)。
+
 ## 🚀 安装
 
 通过 [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server) 自动为不同 IDE 安装 Unsplash 图片集成服务器：
