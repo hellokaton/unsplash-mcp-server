@@ -115,7 +115,8 @@ Add the following configuration to your Cursor editor's `settings.json`:
 
 ## 🔄 Other Implementations
 
-- Golang: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
+- Golang: [unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
+- Java: [unsplash-mcp-server](https://github.com/JavaProgrammerLB/unsplash-mcp-server)
 
 ## 📄 License
 

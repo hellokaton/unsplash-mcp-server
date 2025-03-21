@@ -115,7 +115,8 @@ uv pip install .
 
 ## 🔄 其他实现
 
-- Golang 版本: [github.com/douglarek/unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
+- Golang 版本: [unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
+- Java 实现：[unsplash-mcp-server](https://github.com/JavaProgrammerLB/unsplash-mcp-server)
 
 ## 📄 许可证
 
