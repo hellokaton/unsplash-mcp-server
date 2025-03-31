@@ -40,19 +40,19 @@ Unsplash MCP 用于搜索丰富的高质量图片。适合希望将 Unsplash 功
 **Cursor IDE**
 
 ```bash
-npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cursor --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cursor --key 7558c683-****-****
 ```
 
 **Windsurf**
 
 ```bash
-npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client windsurf --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client windsurf --key 7558c683-****-****
 ```
 
 **Cline**
 
 ```bash
-npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cline --config "{\"unsplashAccessKey\":\"YOUR_ACCESS_KEY\"}"
+npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cline --key 7558c683-****-****
 ```
 
 ### 手动安装
