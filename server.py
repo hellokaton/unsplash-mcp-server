@@ -3,7 +3,7 @@
 
 import os
 from dataclasses import dataclass
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Union
 
 import httpx
 from dotenv import load_dotenv
@@ -28,8 +28,8 @@ class UnsplashPhoto:
 @mcp.tool()
 async def search_photos(
         query: str,
-        page: int = 1,
-        per_page: int = 10,
+        page: Union[int, str] = 1,
+        per_page: Union[int, str] = 10,
         order_by: str = "relevant",
         color: Optional[str] = None,
         orientation: Optional[str] = None
@@ -57,10 +57,22 @@ async def search_photos(
     if not access_key:
         raise ValueError("Missing UNSPLASH_ACCESS_KEY environment variable")
 
+    # 确保page是整数类型
+    try:
+        page_int = int(page)
+    except (ValueError, TypeError):
+        page_int = 1
+
+    # 确保per_page是整数类型
+    try:
+        per_page_int = int(per_page)
+    except (ValueError, TypeError):
+        per_page_int = 10
+
     params = {
         "query": query,
-        "page": page,
-        "per_page": min(per_page, 30),
+        "page": page_int,
+        "per_page": min(per_page_int, 30),
         "order_by": order_by,
     }
 
