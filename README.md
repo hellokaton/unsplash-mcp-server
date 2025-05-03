@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hellokaton-unsplash-mcp-server-badge.png)](https://mseep.ai/app/hellokaton-unsplash-mcp-server)
+
 # Unsplash MCP Server
 
 English | [简体中文](README_zh.md)
