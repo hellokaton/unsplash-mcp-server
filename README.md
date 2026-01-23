@@ -1,14 +1,8 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hellokaton-unsplash-mcp-server-badge.png)](https://mseep.ai/app/hellokaton-unsplash-mcp-server)
+**Forked from [hellokaton/unsplash-mcp-server](https://github.com/hellokaton/unsplash-mcp-server), ONLY USE THIS FORK FOR SECURITY PURPOSES.**
 
 # Unsplash MCP Server
 
-English | [简体中文](README_zh.md)
-
 > A simple MCP server for seamless Unsplash image integration and search capabilities.
-
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![smithery badge](https://smithery.ai/badge/@hellokaton/unsplash-mcp-server)](https://smithery.ai/server/@hellokaton/unsplash-mcp-server)
 
 ## 📋 Overview
 
@@ -37,7 +31,7 @@ For more details, refer to the [official Unsplash API documentation](https://uns
 
 To install Unsplash Image Integration Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hellokaton/unsplash-mcp-server):
 
-### IDE Setup
+<!-- ### IDE Setup
 
 **Cursor IDE**
 
@@ -55,13 +49,13 @@ npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client win
 
 ```bash
 npx -y @smithery/cli@latest install @hellokaton/unsplash-mcp-server --client cline --key 7558c683-****-****
-```
+``` -->
 
 ### Manual Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/hellokaton/unsplash-mcp-server.git
+git clone https://github.com/insify/unsplash-mcp-server.git
 
 # Navigate to project directory
 cd unsplash-mcp-server
@@ -73,7 +67,7 @@ uv venv
 uv pip install .
 ```
 
-**Cursor Editor Integration**
+<!-- **Cursor Editor Integration**
 
 Add the following configuration to your Cursor editor's `settings.json`:
 
@@ -96,9 +90,9 @@ Add the following configuration to your Cursor editor's `settings.json`:
     }
   }
 }
-```
+``` -->
 
-### Using in Cursor
+<!-- ### Using in Cursor
 
 <img src="screenshots/Snipaste_2.png" alt="Unsplash MCP in Cursor" />
 
@@ -113,18 +107,18 @@ Add the following configuration to your Cursor editor's `settings.json`:
   "per_page": 5,
   "orientation": "landscape"
 }
-```
+``` -->
 
-## 🔄 Other Implementations
+<!-- ## 🔄 Other Implementations
 
 - Golang: [unsplash-mcp-server](https://github.com/douglarek/unsplash-mcp-server)
-- Java: [unsplash-mcp-server](https://github.com/JavaProgrammerLB/unsplash-mcp-server)
+- Java: [unsplash-mcp-server](https://github.com/JavaProgrammerLB/unsplash-mcp-server) -->
 
-## 📄 License
+<!-- ## 📄 License
 
-[MIT License](LICENSE)
+[MIT License](LICENSE) -->
 
-## 📬 Contact
+<!-- ## 📬 Contact
 
 - [Twitter/X](https://x.com/hellokaton)
-- [GitHub Issues](https://github.com/hellokaton/unsplash-mcp-server/issues)
+- [GitHub Issues](https://github.com/hellokaton/unsplash-mcp-server/issues) -->
