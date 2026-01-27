@@ -112,3 +112,12 @@ async def search_photos(
     except Exception as e:
         print(f"Request error: {str(e)}")
         raise
+
+
+def main():
+    """Entry point for uvx remote execution."""
+    mcp.run()
+
+
+if __name__ == "__main__":
+    main()
