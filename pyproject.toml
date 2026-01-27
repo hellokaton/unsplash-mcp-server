@@ -12,3 +12,6 @@ dependencies = [
 
 [project.scripts]
 unsplash-mcp-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
