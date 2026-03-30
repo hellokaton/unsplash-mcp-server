@@ -128,3 +128,8 @@ Add the following configuration to your Cursor editor's `settings.json`:
 
 - [Twitter/X](https://x.com/hellokaton)
 - [GitHub Issues](https://github.com/hellokaton/unsplash-mcp-server/issues)
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/hellokaton-unsplash-mcp-server).
+
