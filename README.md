@@ -8,6 +8,8 @@ English | [简体中文](README_zh.md)
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/hellokaton/unsplash-mcp-server)](https://archestra.ai/mcp-catalog/hellokaton__unsplash-mcp-server)
 [![smithery badge](https://smithery.ai/badge/@hellokaton/unsplash-mcp-server)](https://smithery.ai/server/@hellokaton/unsplash-mcp-server)
 
 ## 📋 Overview
