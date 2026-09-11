@@ -10,7 +10,7 @@ English | [简体中文](README_zh.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/hellokaton/unsplash-mcp-server)](https://archestra.ai/mcp-catalog/hellokaton__unsplash-mcp-server)
-[![smithery badge](https://smithery.ai/badge/@hellokaton/unsplash-mcp-server)](https://smithery.ai/server/@hellokaton/unsplash-mcp-server)
+[![Listed on Skillselion](https://skillselion.com/badge/mcp/tool/io.github.hellokaton/unsplash-mcp-server.svg)](https://skillselion.com/mcp/tool/io.github.hellokaton/unsplash-mcp-server)
 
 ## 📋 Overview
 
