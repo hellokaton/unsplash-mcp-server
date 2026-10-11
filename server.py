@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 from dataclasses import dataclass
 from typing import Optional, List, Dict, Union
 
@@ -107,10 +108,10 @@ async def search_photos(
                 for photo in data["results"]
             ]
     except httpx.HTTPStatusError as e:
-        print(f"HTTP error: {e.response.status_code} - {e.response.text}")
+        print(f"HTTP error: {e.response.status_code} - {e.response.text}", file=sys.stderr)
         raise
     except Exception as e:
-        print(f"Request error: {str(e)}")
+        print(f"Request error: {str(e)}", file=sys.stderr)
         raise
 
 
